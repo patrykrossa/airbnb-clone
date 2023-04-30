@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  env: {
+    NEXTAUTH_SECRET: "NEXTAUTH_SECRET"
+  },
+  reactStrictMode: true
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
